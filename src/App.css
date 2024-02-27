@@ -7,11 +7,15 @@
   --nav-tab-font-weight: 500;
   --active-tab-color: linear-gradient(to right, #6944c3, #b673b8);
   /* section */
-  --section-h1-font-size: 3.4rem;
-  --section-p-font-size: 1.4rem;
-  --section-p-font-color: #ffffff6a;
+  --section-h1-font-size: 3.4em;
+  --section-p-font-size: 1.4em;
+  --section-p-line-height: 1.5em;
+  --section-p-word-spacing: 4px;
+  --section-p-font-color: #ffffff7e;
   --section-button-color: #7d6ae9;
   --section-fancy-color: linear-gradient(to right, #6944c3, #b673b8);
+  --fancy-color-primary: #6944c3;
+  --fancy-color-secondary: #b673b8;
 }
 
 a {
@@ -25,9 +29,23 @@ li {
 
 .App {
   min-height: 100vh;
+  height: 100vh;
   margin: 0 auto;
   padding: 0;
   max-width: 1600px;
+}
+
+footer {
+  background-color: #7d6ae9;
+  font-size: 1.2rem;
+  z-index: -50;
+  border-top-left-radius: 8rem;
+  border-top-right-radius: 8rem;
+  text-align: center;
+}
+
+footer > p {
+  padding: 1rem;
 }
 
 .container-nav {
@@ -98,6 +116,7 @@ li {
   display: flex;
   padding: 2rem 0;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .container-section > .section-text {
@@ -113,7 +132,6 @@ li {
   gap: 0.5rem;
   display: flex;
   align-items: center;
-  margin-bottom: -1.6rem;
 }
 
 .section-text > h1:nth-child(3) {
@@ -128,7 +146,9 @@ li {
 
 .container-section > .section-text > p {
   font-size: var(--section-p-font-size);
+  line-height: var(--section-p-line-height);
   color: var(--section-p-font-color);
+  word-spacing: var(--section-p-word-spacing);
 }
 .container-section > .section-text > a {
   font-size: var(--section-p-font-size);
@@ -138,11 +158,58 @@ li {
   font-weight: 500;
 }
 .section-text > a > span {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   margin-left: 1em;
 }
 
 .container-section > aside {
   text-align: center;
   flex: 0.8;
+}
+
+#about-text {
+  font-size: 1.6rem;
+  line-height: 0;
+}
+
+#aside-inverted {
+}
+
+.section-text > li > p {
+  font-size: var(--section-p-font-size);
+  color: var(--section-p-font-color);
+}
+
+.gt,
+.core-skill-li {
+  margin-right: 12px;
+  color: #ffff;
+}
+
+.container-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.container-section:nth-child(3),
+.container-section:nth-child(3) > .section-text > h1 {
+  margin-bottom: 4rem;
+}
+
+.container-section:nth-child(4) {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  flex: 0;
+}
+.container-section:nth-child(4) > .section-text {
+  max-width: fit-content;
+  text-align: center;
+  padding: 4rem;
+}
+
+.container-section:nth-child(4) > .section-text > h1 {
+  background-image: var(--section-fancy-color);
+  background-clip: text;
+  color: transparent;
 }

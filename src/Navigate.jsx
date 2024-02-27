@@ -1,11 +1,6 @@
-import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 const Navigate = () => {
-  useEffect(() => {
-    console.log(window.innerWidth);
-  }, []);
-
   return (
     <>
       <nav className="container-nav">
