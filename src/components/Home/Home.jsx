@@ -58,9 +58,7 @@ const Section = () => {
       <br />
       <Link id="project-button" to="/project">
         My Projects
-        <span>
-          <i class="fas fa-arrow-right"></i>
-        </span>
+        <span>&gt;</span>
       </Link>
     </div>
   );
