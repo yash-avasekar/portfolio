@@ -102,7 +102,7 @@ const Aside2 = () => {
     animationData: about,
   };
   return (
-    <aside id="aside-inverted">
+    <aside>
       <Lottie options={defaultOptions} height={550} />
     </aside>
   );

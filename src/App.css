@@ -38,7 +38,7 @@ li {
 footer {
   background-color: #7d6ae9;
   font-size: 1.2rem;
-  z-index: -50;
+
   border-top-left-radius: 8rem;
   border-top-right-radius: 8rem;
   text-align: center;
@@ -172,9 +172,6 @@ footer > p {
   line-height: 0;
 }
 
-#aside-inverted {
-}
-
 .section-text > li > p {
   font-size: var(--section-p-font-size);
   color: var(--section-p-font-color);
@@ -212,4 +209,13 @@ footer > p {
   background-image: var(--section-fancy-color);
   background-clip: text;
   color: transparent;
+}
+
+/*  */
+/*  */
+.container-section > .section-text > h2 {
+  font-size: 2rem;
+}
+
+.education {
 }
