@@ -1,0 +1,70 @@
+:root {
+  --p-font-size: 1.5rem;
+  --fancy-color: linear-gradient(to right, #6944c2, #b572b7);
+}
+
+#full-stack {
+  margin-top: -2rem;
+}
+
+#project-button {
+  font-size: var(--p-font-size);
+  padding: 16px 2rem;
+  border-radius: 8px;
+  background-color: #7d6ae9;
+  display: inline-block;
+  font-weight: 500;
+}
+#project-button > span {
+  margin: 0 1rem;
+}
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.container-section {
+  padding: 2rem;
+  display: flex;
+  gap: 4rem;
+}
+
+.container-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.section-text {
+  flex: 0.5;
+
+  height: fit-content;
+  align-self: center;
+}
+
+.aside-image {
+  flex: 0.5;
+}
+
+#about-me-text {
+  font-size: 1.6rem;
+  margin-bottom: -1.2rem;
+}
+
+.sub-text-color {
+  color: #fff;
+  margin-right: 12px;
+}
+.sub-text-line-height {
+  line-height: normal;
+}
+
+.section-full-row {
+  display: inline-block;
+  min-width: 100%;
+  text-align: center;
+  margin: 6rem 0;
+  background-image: var(--fancy-color);
+  background-clip: text;
+  color: transparent;
+}

@@ -1,9 +1,29 @@
+import "./home.css";
 import { useEffect } from "react";
+import Lottie from "react-lottie";
+
 import { Link } from "react-router-dom";
 import hello from "../../Assests/Hello.json";
-import skills from "../../Assests/Skills.json";
 import about from "../../Assests/About.json";
-import Lottie from "react-lottie";
+import skills from "../../Assests/Skills.json";
+
+const defaultOptions = [
+  {
+    loop: true,
+    autoplay: true,
+    animationData: hello,
+  },
+  {
+    loop: true,
+    autoplay: true,
+    animationData: about,
+  },
+  {
+    loop: true,
+    autoplay: true,
+    animationData: skills,
+  },
+];
 
 const Home = () => {
   useEffect(() => {
@@ -11,73 +31,71 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      <section className="container-section">
-        <Section1 />
-        <Aside />
-      </section>
+    <div className="container-home">
+      <div className="container-section">
+        <Hi />
+        <HiAside />
+      </div>
 
-      <section className="container-section">
-        <Section2 />
-        <Aside2 />
-      </section>
+      <div className="container-section">
+        <About />
+        <AboutAside />
+      </div>
 
-      <section className="container-section">
-        <Section3 />
-        <Aside3 />
-      </section>
+      <div className="container-section">
+        <Skills />
+        <SkillsAside />
+      </div>
 
-      <section className="container-section">
-        <Section4 />
-      </section>
-    </>
-  );
-};
-
-const Section1 = () => {
-  return (
-    <div className="section-text">
-      <h1>Hi</h1>
-      <h1>
-        I'm <span id="fancy-color">Yash Avasekar</span>
-      </h1>
-      <h1>
-        Full-Stack <span id="fancy-color">Developer.</span>
-      </h1>
-      <p>
-        I am a full-stack web developer. I can provide clean and scalable code
-        with with great backend service.
-      </p>
-      <br />
-      <br />
-
-      <Link id="project-button" to="/project">
-        My Projects
-        <span>&gt;</span>
-      </Link>
+      <div className="container-section">
+        <Build />
+      </div>
     </div>
   );
 };
 
-const Aside = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: hello,
-  };
+// Hello
+const Hi = () => {
   return (
-    <aside>
-      <Lottie options={defaultOptions} height={550} />
+    <section className="section-text">
+      <h1>Hi</h1>
+      <h1>
+        I'm <span id="fancy-text">Yash Avasekar</span>
+      </h1>
+      <h1 id="full-stack">
+        Full-Stack <span id="fancy-text">Developer.</span>
+      </h1>
+
+      <p className="sub-text-line-height">
+        I am a full-stack web developer.
+        <br />I can provide clean and scalable code with great backend service.
+      </p>
+
+      <br />
+      <br />
+
+      <Link id="project-button" to={"/projects"}>
+        My Projects <span id="gt sub-text-color">&gt;</span>
+      </Link>
+    </section>
+  );
+};
+
+const HiAside = () => {
+  return (
+    <aside className="aside-image">
+      <Lottie options={defaultOptions[0]} />
     </aside>
   );
 };
 
-const Section2 = () => {
+// About
+const About = () => {
   return (
-    <div className="section-text">
-      <h1 id="about-text">About Me</h1>
+    <section className="section-text">
+      <h1 id="about-me-text">About Me</h1>
       <h1>
-        Yash <span id="fancy-color">Avasekar</span>
+        Yash <span id="fancy-text">Avasekar</span>
       </h1>
       <p>
         Hi there! I’m Yash Avasekar, a passionate Web & Backend developer based
@@ -91,97 +109,86 @@ const Section2 = () => {
         My journey began with a Bachelor’s degree in Computer Science, and since
         then, I’ve been on an exciting coding adventure.
       </p>
-    </div>
+    </section>
   );
 };
 
-const Aside2 = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: about,
-  };
+const AboutAside = () => {
   return (
-    <aside>
-      <Lottie options={defaultOptions} height={550} />
+    <aside className="aside-image">
+      <Lottie options={defaultOptions[1]} />
     </aside>
   );
 };
 
-const Section3 = () => {
+// Skills
+const Skills = () => {
   return (
-    <div className="section-text">
+    <section className="section-text">
       <h1>
-        Core <span id="fancy-color">Skills</span>
+        Core <span id="fancy-text">Skills</span>
       </h1>
-
       <li>
-        <p>
-          <span className="gt">&gt;</span>
-          <span className="core-skill-li">Frontend Development :</span>
+        <p className="sub-text-line-height">
+          <span className="gt sub-text-color">&gt;</span>
+          <span className="sub-text-color">Frontend Development :</span>
           HTML, CSS, JavaScript
         </p>
       </li>
       <li>
-        <p>
-          <span className="gt">&gt;</span>
-          <span className="core-skill-li">Backend Development :</span>
+        <p className="sub-text-line-height">
+          <span className="gt sub-text-color">&gt;</span>
+          <span className="sub-text-color">Backend Development :</span>
           Python
         </p>
       </li>
       <li>
-        <p>
-          <span className="gt">&gt;</span>
-          <span className="core-skill-li">Frameworks :</span>
+        <p className="sub-text-line-height">
+          <span className="gt sub-text-color">&gt;</span>
+          <span className="sub-text-color">Frameworks :</span>
           React JS, React Native ,Django-Rest
         </p>
       </li>
       <li>
-        <p>
-          <span className="gt">&gt;</span>
-          <span className="core-skill-li">Databases :</span>
+        <p className="sub-text-line-height">
+          <span className="gt sub-text-color">&gt;</span>
+          <span className="sub-text-color">Databases :</span>
           MySQL, MongoDB ,Oracle
         </p>
       </li>
       <li>
-        <p>
-          <span className="gt">&gt;</span>
-          <span className="core-skill-li">Version Control :</span>
+        <p className="sub-text-line-height">
+          <span className="gt sub-text-color">&gt;</span>
+          <span className="sub-text-color">Version Control :</span>
           Git
         </p>
       </li>
       <li>
-        <p>
-          <span className="gt">&gt;</span>
-          <span className="core-skill-li">AWS Services :</span>
+        <p className="sub-text-line-height">
+          <span className="gt sub-text-color">&gt;</span>
+          <span className="sub-text-color">AWS Services :</span>
           AWS EC2 ,AWS S3 Bucket ,AWS Elastic-Beanstalk ,AWS RDS
         </p>
       </li>
-    </div>
+    </section>
   );
 };
 
-const Aside3 = () => {
-  useEffect(() => {}, []);
-
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: skills,
-  };
+const SkillsAside = () => {
   return (
-    <aside>
-      <Lottie options={defaultOptions} height={550} />
+    <aside className="aside-image">
+      <Lottie options={defaultOptions[2]} />
     </aside>
   );
 };
 
-const Section4 = () => {
+// Lets build together
+const Build = () => {
   return (
-    <div className="section-text">
+    <section className="section-text section-full-row">
       <h1>Feel free to explore my projects, and get in touch!</h1>
       <h1>Let’s build something amazing together.</h1>
-    </div>
+    </section>
   );
 };
 
