@@ -112,3 +112,15 @@ nav > li > a:hover {
   line-height: 1.8rem;
   word-spacing: 2px;
 }
+
+footer {
+  background-color: #7d6ae9;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+footer > p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+}

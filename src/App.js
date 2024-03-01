@@ -1,5 +1,6 @@
 import "./App.css";
 import "./MediaScreen.css";
+import Footer from "./components/Footer";
 import Main from "./components/Main";
 
 import Navigate from "./components/Navigate";
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Navigate />
       <Main />
+      <Footer />
     </div>
   );
 }
