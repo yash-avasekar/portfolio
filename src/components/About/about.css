@@ -18,10 +18,10 @@
 /* adjust in media about the aside placement */
 .about-aside {
   height: auto;
-  border: 1px solid;
+
   border-radius: 12px;
   width: 4px;
-  border: none;
+
   animation: time-line 3s infinite linear;
 }
 
@@ -37,7 +37,6 @@
 }
 
 .container-section {
-  /* border: 1px solid; */
   padding: 0 2rem;
 }
 
