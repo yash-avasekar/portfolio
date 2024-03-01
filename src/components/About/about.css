@@ -1,0 +1,46 @@
+.section-row {
+  flex: 0.477;
+  margin: 3rem 0;
+}
+
+@keyframes time-line {
+  0% {
+    background-color: #6944c2;
+  }
+  50% {
+    background-color: #b572b7;
+  }
+  100% {
+    background-color: #6944c2;
+  }
+}
+
+/* adjust in media about the aside placement */
+.about-aside {
+  height: auto;
+  border: 1px solid;
+  border-radius: 12px;
+  width: 4px;
+  border: none;
+  animation: time-line 3s infinite linear;
+}
+
+/* adjust in media about the aside placement */
+.about-aside > div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -13px;
+  animation: time-line 3s infinite linear;
+  z-index: 1;
+}
+
+.container-section {
+  /* border: 1px solid; */
+  padding: 0 2rem;
+}
+
+.container-about {
+  gap: 0;
+}

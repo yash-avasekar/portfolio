@@ -37,7 +37,6 @@
 
 .section-text {
   flex: 0.5;
-
   height: fit-content;
   align-self: center;
 }
@@ -46,7 +45,7 @@
   flex: 0.5;
 }
 
-#about-me-text {
+#h1-small-text {
   font-size: 1.6rem;
   margin-bottom: -1.2rem;
 }

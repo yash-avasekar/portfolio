@@ -93,7 +93,7 @@ const HiAside = () => {
 const About = () => {
   return (
     <section className="section-text">
-      <h1 id="about-me-text">About Me</h1>
+      <h1 id="h1-small-text">About Me</h1>
       <h1>
         Yash <span id="fancy-text">Avasekar</span>
       </h1>

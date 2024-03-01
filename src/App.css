@@ -24,7 +24,7 @@ h1 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--p-font-color);
   line-height: var(--p-line-height);
   word-spacing: var(--p-word-spacing);
@@ -93,6 +93,7 @@ nav > li > a:hover {
 /* main */
 .container {
   padding: 2rem;
+  border: 1px solid;
 }
 
 #gt {
@@ -103,4 +104,12 @@ nav > li > a:hover {
   background-image: var(--fancy-color);
   background-clip: text;
   color: transparent;
+}
+
+.list-style-type {
+  list-style-type: circle;
+  font-size: 1.3rem;
+  color: var(--p-font-color);
+  line-height: 1.8rem;
+  word-spacing: 2px;
 }
