@@ -129,7 +129,6 @@ nav > li > a:hover {
   flex: 0.5;
   height: fit-content;
   align-self: center;
-  border: 1px solid purple;
 }
 
 .aside-image {
