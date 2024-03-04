@@ -115,12 +115,15 @@ nav > li > a:hover {
 
 footer {
   background-color: #7d6ae9;
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
 }
 
 footer > p {
   color: #fff;
-  text-align: center;
   font-size: 1.2rem;
+  margin: 0;
+  padding: 1rem 4rem;
 }
