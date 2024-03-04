@@ -1,14 +1,9 @@
-import { useEffect } from "react";
 import "../Home/home.css";
 import "./about.css";
 import "../../App.css";
 import { Skill } from "./Skill";
 
 const About = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className="container-home container-about">
       <div className="container-section">

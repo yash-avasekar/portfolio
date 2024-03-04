@@ -1,5 +1,5 @@
 import "./home.css";
-import { useEffect } from "react";
+
 import Lottie from "react-lottie";
 
 import { Link } from "react-router-dom";
@@ -26,10 +26,6 @@ const defaultOptions = [
 ];
 
 const Home = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
     <div className="container-home">
       <div className="container-section">

@@ -115,6 +115,50 @@ nav > li > a:hover {
   word-spacing: 2px;
 }
 
+.container-section {
+  padding: 2rem;
+  display: flex;
+  gap: 4rem;
+}
+
+.container-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.section-text {
+  flex: 0.5;
+  height: fit-content;
+  align-self: center;
+  border: 1px solid purple;
+}
+
+.aside-image {
+  flex: 0.5;
+}
+
+#h1-small-text {
+  font-size: 1.6rem;
+  margin-bottom: -1.2rem;
+}
+
+.sub-text-color {
+  color: #fff;
+  margin-right: 12px;
+}
+.sub-text-line-height {
+  line-height: normal;
+}
+
+.section-full-row {
+  display: inline-block;
+  min-width: 100%;
+  text-align: center;
+  margin: 6rem 0;
+  background-image: var(--fancy-color);
+  background-clip: text;
+  color: transparent;
+}
+
 footer {
   background-color: #7d6ae9;
   display: flex;

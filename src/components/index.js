@@ -1,6 +1,6 @@
 import About from "./About/About";
-import Contact from "./Contact/Contact";
+import Resume from "./Resume/Resume";
 import Home from "./Home/Home";
 import Project from "./Project/Project";
 
-export default { Home, About, Contact, Project };
+export default { Home, About, Resume, Project };

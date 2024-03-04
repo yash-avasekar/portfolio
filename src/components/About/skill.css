@@ -1,5 +1,4 @@
 .container-skills {
-  border: 1px solid purple;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,3 +6,32 @@
   margin-top: 4rem;
 }
 
+.Skillset {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  width: 70rem;
+  margin: 2rem 0;
+}
+
+.icons {
+  height: 4rem;
+  width: 6rem;
+  border: 2px solid;
+  padding: 2rem 6rem;
+  border-radius: 32px;
+  color: #7d6ae9;
+  transition: transform 300ms ease-in-out;
+  box-shadow: 0 0 8px #7d6ae9; /* Adjust shadow values as needed */
+  overflow: hidden;
+}
+
+.icons:hover {
+  transform: scale(1.2);
+}
+
+.h2-big-text {
+  font-size: 2rem;
+}
