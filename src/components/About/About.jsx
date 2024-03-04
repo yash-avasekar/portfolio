@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "../Home/home.css";
 import "./about.css";
 import "../../App.css";
+import { Skill } from "./Skill";
 
 const About = () => {
   useEffect(() => {
@@ -29,6 +30,10 @@ const About = () => {
         <BeyondCode />
         <Aside />
       </div>
+
+      <div className="container-section">
+        <Skill />
+      </div>
     </div>
   );
 };
@@ -41,15 +46,15 @@ const BackgroundEducation = () => {
       </h1>
       <p>
         I’m Yash Avasekar, a tech enthusiast hailing from Solapur, Maharashtra.
-        <p>
-          My journey into the world of technology began during my college days.
-        </p>
-        <p>
-          I pursued a Bachelor’s degree in Computer Science from Fabtech
-          Technical Campus affilated by Dr. Babasaheb Ambedkar Technological
-          University, where I delved into algorithms, data structures, and
-          software development.
-        </p>
+      </p>
+      <p>
+        My journey into the world of technology began during my college days.
+      </p>
+      <p>
+        I pursued a Bachelor’s degree in Computer Science from Fabtech Technical
+        Campus affilated by Dr. Babasaheb Ambedkar Technological University,
+        where I delved into algorithms, data structures, and software
+        development.
       </p>
     </section>
   );
@@ -62,36 +67,30 @@ const WorkExperience = () => {
       <h1>
         Personal <span id="fancy-text">Projects</span>
       </h1>
-      <li>
-        <p className="sub-text-line-height">
+      <p className="sub-text-line-height">
+        <li>
           <span className="gt sub-text-color">&gt;</span>
           <span className="sub-text-color">A Personal Portfolio Website</span>
-          <li>(Using React)</li>
-        </p>
-      </li>
-      <li>
-        <p className="sub-text-line-height">
+        </li>
+      </p>
+      <p className="sub-text-line-height">
+        <li>
           <span className="gt sub-text-color">&gt;</span>
           <span className="sub-text-color">A simple to-do list app.</span>
-          <li>(Django Rest Framework as backend)</li>
-        </p>
-      </li>
-      <li>
-        <p className="sub-text-line-height">
+        </li>
+      </p>
+      <p className="sub-text-line-height">
+        <li>
           <span className="gt sub-text-color">&gt;</span>
           <span className="sub-text-color">A Blog Web-App</span>
-          <br />
-          (React as Frontend and Django REST-API as Backend)
-        </p>
-      </li>
-      <li>
-        <p className="sub-text-line-height">
+        </li>
+      </p>
+      <p className="sub-text-line-height">
+        <li>
           <span className="gt sub-text-color">&gt;</span>
           <span className="sub-text-color">Instagram Lite clone Web-App</span>
-          <br />
-          (React as Frontend and Django REST-API as Backend)
-        </p>
-      </li>
+        </li>
+      </p>
     </section>
   );
 };

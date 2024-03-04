@@ -13,6 +13,7 @@ const Navigate = () => {
         <li>
           <NavLink to={"about"}>About</NavLink>
         </li>
+
         <li>
           <NavLink to={"projects"}>Projects</NavLink>
         </li>

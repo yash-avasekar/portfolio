@@ -77,12 +77,14 @@ p {
   display: block;
   padding: 1rem 2.5rem;
   width: max-content;
+  font-weight: 500;
 }
 
 .active {
   background-image: var(--fancy-color);
   background-clip: text;
   color: transparent;
+  font-weight: 500;
 }
 
 nav > li > a:hover {

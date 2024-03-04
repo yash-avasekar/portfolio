@@ -10,6 +10,7 @@ const Main = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+
         <Route path="/projects" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
