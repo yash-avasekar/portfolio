@@ -10,7 +10,7 @@
 #project-button {
   font-size: var(--p-font-size);
   padding: 16px 2rem;
-  border-radius: 8px;
+  border-radius: 2rem;
   background-color: #7d6ae9;
   display: inline-block;
   font-weight: 500;

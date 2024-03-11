@@ -64,26 +64,23 @@ const WorkExperience = () => {
       </h1>
       <p className="sub-text-line-height">
         <li>
-          <span className="gt sub-text-color">&gt;</span>
-          <span className="sub-text-color">A Personal Portfolio Website</span>
+          <span id="gt">&gt;</span>A Personal Portfolio Website
         </li>
       </p>
       <p className="sub-text-line-height">
         <li>
-          <span className="gt sub-text-color">&gt;</span>
-          <span className="sub-text-color">A simple to-do list app.</span>
+          <span id="gt">&gt;</span>A simple to-do list app.
         </li>
       </p>
       <p className="sub-text-line-height">
         <li>
-          <span className="gt sub-text-color">&gt;</span>
-          <span className="sub-text-color">A Blog Web-App</span>
+          <span id="gt">&gt;</span>A Blog Web-App
         </li>
       </p>
       <p className="sub-text-line-height">
         <li>
-          <span className="gt sub-text-color">&gt;</span>
-          <span className="sub-text-color">Instagram Lite clone Web-App</span>
+          <span id="gt">&gt;</span>
+          Instagram Lite clone Web-App
         </li>
       </p>
     </section>
