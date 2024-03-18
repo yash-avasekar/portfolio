@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <footer>
-      <p>Designed and Developed by Yash </p>
-      <p>Copywright &copy; 2024</p>
+      <p>Designed and Developed by Yash Avasekar</p>
+      <p>&copy; Copywright 2024</p>
     </footer>
   );
 };
