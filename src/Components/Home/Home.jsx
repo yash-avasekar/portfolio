@@ -8,7 +8,7 @@ import {
   LottieFiles,
   skill_description,
   skill_title,
-} from "./home_data";
+} from "./data";
 import { Link } from "react-router-dom";
 
 const Home = () => {
