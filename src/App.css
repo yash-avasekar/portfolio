@@ -29,7 +29,7 @@ h1 {
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   word-spacing: 1px;
   line-height: 2rem;
   color: var(--description-color);
@@ -94,16 +94,18 @@ nav {
 }
 
 main {
-  margin: 0 3rem;
+  margin: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .container-sections {
   display: flex;
   gap: 1.6rem;
-  padding: 2rem;
+  padding: 3rem 2rem;
   align-items: center;
-
-  margin: 4rem 0;
+  /* border: 1px solid white; */
 }
 .container-sections:nth-child(even) {
   flex-direction: row-reverse;
@@ -111,6 +113,7 @@ main {
 
 section {
   flex-basis: 50%;
+  /* border: 1px solid white; */
 }
 
 .fancy-color {
@@ -134,8 +137,9 @@ section {
 }
 
 .p-intro-line-height {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: var(--description-color);
+  line-height: 2rem;
 }
 
 .skills-list-style {
@@ -145,8 +149,45 @@ section {
 
 aside {
   flex-basis: 50%;
+  /* border: 1px solid; */
 }
 
+/*  */
+/* about */
+/*  */
+
+.about-section {
+  flex-basis: 100%;
+  /* display: flex; */
+}
+
+.about-aside {
+  height: auto;
+
+  border-radius: 12px;
+  width: 4px;
+}
+
+.about-aside > div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -13px;
+
+  z-index: 1;
+}
+
+.section-about {
+  padding: 2rem;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #1e2125, #191c20);
+  box-shadow: 11px 11px 22px #16181c, -11px -11px 22px #22262a;
+}
+
+/*  */
+/* footer */
+/*  */
 footer {
   display: flex;
   justify-content: space-between;

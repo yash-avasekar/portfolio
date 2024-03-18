@@ -38,7 +38,7 @@ const Intro = () => {
   return (
     <section>
       {intro_title.map((title) => (
-        <>
+        <div key={title}>
           <h1>{title[0]}</h1>
           <h1>
             {title[1]} <span className="fancy-color">{title[2]}</span>
@@ -46,7 +46,7 @@ const Intro = () => {
           <h1 className="full-stack-margin">
             {title[3]} <span className="fancy-color">{title[4]}</span>
           </h1>
-        </>
+        </div>
       ))}
 
       {/* descrition */}
@@ -121,7 +121,7 @@ const Skills = () => {
 const SkillsAside = () => {
   return (
     <aside>
-      <Lottie options={LottieFiles[2]} />
+      <Lottie options={LottieFiles[2]} style={{ width: "90%" }} />
     </aside>
   );
 };
