@@ -1,0 +1,27 @@
+:root {
+  --scrollbar-color: linear-gradient(to right, #6944c3, #b673b8);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", "Noto Sans";
+  background-color: #1c1f23;
+  color: #ffffffec;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: purple;
+  border-radius: 24px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Change the color to your preference */
+}
