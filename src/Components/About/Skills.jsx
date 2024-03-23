@@ -25,7 +25,7 @@ import { FaUbuntu } from "react-icons/fa";
 
 const Skills = () => {
   return (
-    <section className="skill-full-width">
+    <section className="section-full-width">
       {skill_title.map((title) => (
         <div key={title}>
           <h1>
@@ -48,7 +48,7 @@ const Skills = () => {
 
 const Skillset = () => {
   return (
-    <section className="Skillset">
+    <section>
       <ImHtmlFive2 className="icons" />
       <ImCss3 className="icons" />
       <IoLogoJavascript className="icons" />
@@ -67,7 +67,7 @@ const Skillset = () => {
 
 const Tools = () => {
   return (
-    <section className="Skillset">
+    <section>
       <SiVisualstudiocode className="icons" />
       <SiPycharm className="icons" />
       <SiPostman className="icons" />
@@ -79,7 +79,7 @@ const Tools = () => {
 
 const OS = () => {
   return (
-    <section className="Skillset">
+    <section>
       <FaUbuntu className="icons" />
       <SiWindows className="icons" />
     </section>

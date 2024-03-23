@@ -2,6 +2,7 @@ import Lottie from "react-lottie";
 import {
   about_description,
   about_title,
+  connect,
   intro_description,
   intro_link,
   intro_title,
@@ -27,6 +28,10 @@ const Home = () => {
       <div className="container-sections">
         <Skills />
         <SkillsAside />
+      </div>
+
+      <div className="container-sections">
+        <Connect />
       </div>
     </>
   );
@@ -121,8 +126,18 @@ const Skills = () => {
 const SkillsAside = () => {
   return (
     <aside>
-      <Lottie options={LottieFiles[2]} style={{ width: "90%" }} />
+      <Lottie options={LottieFiles[2]} width={"90%"} />
     </aside>
+  );
+};
+
+const Connect = () => {
+  return (
+    <section className="section-full-width">
+      {connect.map((title) => (
+        <h2 key={title}>{title}</h2>
+      ))}
+    </section>
   );
 };
 

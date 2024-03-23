@@ -6,6 +6,7 @@
   --secondary-text-color: #b572b7;
   --hover-color: #b572b7;
   --description-color: #7c7a7e;
+  --background-color: #23272c;
 }
 
 .App {
@@ -26,6 +27,10 @@ a {
 
 h1 {
   font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 p {
@@ -79,7 +84,6 @@ nav {
 .tabs > li > a {
   display: block;
   padding: 1rem 2rem;
-  transition: border-bottom 0.3s;
   font-size: 1.4rem;
 }
 
@@ -99,6 +103,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  min-height: 90vh;
 }
 
 .container-sections {
@@ -106,7 +111,6 @@ main {
   gap: 1.6rem;
   padding: 0 2rem;
   align-items: center;
-
   margin: 2.5rem 0;
 }
 .container-sections:nth-child(even) {
@@ -203,7 +207,7 @@ aside {
   animation: timeline 2s infinite linear;
 }
 
-.skill-full-width {
+.section-full-width {
   flex-basis: 100%;
   text-align: center;
 }
@@ -242,6 +246,49 @@ aside {
   background-image: var(--fancy-color);
   color: inherit;
   box-shadow: 0 8px 16px rgb(26, 25, 25); /* Adjust shadow values as needed */
+}
+
+/*  */
+/* project */
+/*  */
+.container-cards {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.card {
+  flex-basis: 25%;
+  padding: 1.4rem;
+  height: fit-content;
+  background-image: linear-gradient(145deg, #1e2125, #191c20);
+  box-shadow: 11px 11px 22px #16181c, -11px -11px 22px #22262a;
+}
+
+.card:hover {
+  background-image: linear-gradient(145deg, #3d434b, #191c20);
+}
+
+.card,
+.card-title,
+.card-desc {
+  border-radius: 24px;
+}
+
+.card-title,
+.card-desc {
+  border-radius: 24px;
+  margin: 0.5rem 0;
+}
+
+.card-desc {
+  text-align: start;
+}
+
+.card:hover > .card-desc {
+  display: block;
 }
 
 /*  */
