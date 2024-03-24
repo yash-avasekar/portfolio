@@ -156,6 +156,19 @@ aside {
   flex-basis: 50%;
 }
 
+.connect-icons {
+  padding: 1rem;
+  border-radius: 50%;
+  margin: 3rem 3rem;
+  background-color: #6944c2;
+  font-size: 3rem;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.connect-icons:hover {
+  box-shadow: 0 0px 24px var(--primary-text-color); /* Shadow color on hover */
+}
+
 /*  */
 /* about */
 /*  */
@@ -262,9 +275,9 @@ aside {
 .card {
   flex-basis: 25%;
   padding: 1.4rem;
-  height: fit-content;
   background-image: linear-gradient(145deg, #1e2125, #191c20);
   box-shadow: 11px 11px 22px #16181c, -11px -11px 22px #22262a;
+  height: fit-content;
 }
 
 .card:hover {
@@ -289,6 +302,22 @@ aside {
 
 .card:hover > .card-desc {
   display: block;
+}
+
+.card-button {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.card-button > a {
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: var(--primary-text-color);
+  color: inherit;
 }
 
 /*  */

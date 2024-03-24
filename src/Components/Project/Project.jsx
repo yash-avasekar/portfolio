@@ -1,5 +1,6 @@
 import { useState } from "react";
 import image from "./default.jpg";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   return (
@@ -36,6 +37,8 @@ const Cards = () => {
     ],
   ]);
 
+  const [live, setLive] = useState([["#"], ["#"], ["#"], ["#"]]);
+
   return (
     <section className="section-full-width">
       <h1>My Recent Work</h1>
@@ -58,6 +61,16 @@ const Cards = () => {
             <div className="card-desc">
               {cardDesc[index].map((desc) => (
                 <p key={desc}>{desc}</p>
+              ))}
+            </div>
+            <div className="card-button">
+              <Link to="https://github.com/yash-avasekar/" target="_blank">
+                GitHub
+              </Link>
+              {live[index].map((link) => (
+                <Link to={link} key={link}>
+                  Live
+                </Link>
               ))}
             </div>
           </div>

@@ -11,8 +11,14 @@ import {
   skill_title,
 } from "./data";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { FaGithub } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { RiLinkedinFill } from "react-icons/ri";
 
 const Home = () => {
+  useEffect(() => {}, []);
+
   return (
     <>
       <div className="container-sections">
@@ -137,6 +143,18 @@ const Connect = () => {
       {connect.map((title) => (
         <h2 key={title}>{title}</h2>
       ))}
+
+      <div>
+        <Link to="https://github.com/yash-avasekar/" target="_blank">
+          <FaGithub className="connect-icons" />
+        </Link>
+        <Link to="https://instagram.com/_y.a.s.h_7/" target="_blank">
+          <AiFillInstagram className="connect-icons" />
+        </Link>
+        <Link to="https://linkedin.com/in/yash-avasekar/" target="_blank">
+          <RiLinkedinFill className="connect-icons" />
+        </Link>
+      </div>
     </section>
   );
 };
