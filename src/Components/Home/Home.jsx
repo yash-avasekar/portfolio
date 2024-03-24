@@ -17,7 +17,9 @@ import { AiFillInstagram } from "react-icons/ai";
 import { RiLinkedinFill } from "react-icons/ri";
 
 const Home = () => {
-  useEffect(() => {}, []);
+  useEffect(() => {
+    console.log(window.innerWidth);
+  }, []);
 
   return (
     <>

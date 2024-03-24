@@ -18,7 +18,7 @@ const Resume = () => {
         <Document file={resume} className="resume">
           <Page
             pageNumber={1}
-            scale={width > 786 ? 1.7 : 0.6}
+            scale={width > 786 ? 1.4 : 0.6}
             renderTextLayer={false}
           />
         </Document>

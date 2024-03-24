@@ -12,7 +12,7 @@
 .App {
   min-height: 100vh;
 
-  max-width: 1600px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
@@ -48,7 +48,7 @@ nav {
   z-index: 5;
   margin: 0 3rem;
   background-color: #1c1f23b0;
-  padding: 0.6rem 0;
+  padding: 0.2rem 0;
   border-bottom: 1px solid #2a2d31;
   backdrop-filter: blur(10px);
 }
@@ -69,7 +69,7 @@ nav {
   font-size: var(--logo-size);
   animation: logo-color 3s infinite linear;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .tabs {
@@ -84,7 +84,7 @@ nav {
 .tabs > li > a {
   display: block;
   padding: 1rem 2rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .tabs > li > a:hover {
