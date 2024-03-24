@@ -42,6 +42,7 @@ p {
 
 nav {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   top: 0;
   position: sticky;
@@ -70,6 +71,7 @@ nav {
   animation: logo-color 3s infinite linear;
   font-weight: 700;
   font-size: 1.5rem;
+  min-width: max-content;
 }
 
 .tabs {
@@ -313,7 +315,7 @@ aside {
 
 .card-button > a {
   padding: 1rem 3rem;
-  font-size: 1.2rem;
+  font-size: 1.1em;
   border-radius: 2rem;
   border: none;
   background-color: var(--primary-text-color);

@@ -6,19 +6,66 @@
 
 } */
 
-/* @media only screen and (min-width: 601px) and (max-width: 767px) {
-  Styles for landscape phones go here
-} */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  body {
+    background-color: beige;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* Styles for medium devices (tablets) go here */
-  body {
-    background-color: aliceblue;
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+  .p-intro-line-height {
+    font-size: 1.2em;
+  }
+
+  nav {
+    margin: 0 1.5rem;
+  }
+
+  main {
+    margin: 0rem 1.5rem;
+  }
+
+  .container-sections {
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+
+  /* about icons */
+  .icons {
+    height: 3rem;
+    width: 3rem;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  
+  p {
+    font-size: 1.3rem;
+  }
+  nav {
+    margin: 0 1.5rem;
+  }
+
+  main {
+    margin: 0rem 1.5rem;
+  }
+
+  .container-sections {
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+
+  /* about icons */
+  .icons {
+    height: 3rem;
+    width: 3rem;
+  }
 }
 
 /* @media only screen and (min-width: 1200px) {
