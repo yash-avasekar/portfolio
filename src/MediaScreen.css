@@ -1,29 +1,136 @@
 /* Styles for all devices */
 
 /* Media queries for different screen sizes */
-/* @media only screen and (max-width: 600px) {
-  Styles for small devices go here
+@media only screen and (max-width: 991px) {
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    color: var(--primary-text-color);
+    font-size: 1.8em;
+    display: flex;
+    transition: all 0.3 ease-in-out;
+  }
 
-} */
+  .tabs {
+    position: absolute;
+    flex-direction: column;
+    top: 4rem;
+    z-index: 5;
+    width: 100%;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #1c1f23dc;
+  }
 
-@media only screen and (min-width: 601px) and (max-width: 767px) {
-  body {
-    background-color: beige;
+  .show {
+    max-height: 100vh;
+  }
+
+  p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+
+  .p-intro-line-height {
+    font-size: 1.3em;
+  }
+
+  /* about */
+  .section-about {
+    margin: 3rem 1rem 0rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  nav {
+    margin: 0 1.5rem;
+  }
+
+  main {
+    margin: 0rem 1.5rem;
+  }
+
+  .container-sections {
+    padding: 0 0rem;
+    margin: 1rem 0;
+    flex-direction: column;
+  }
+
+  .container-sections:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  section {
+    width: 90%;
+  }
+
+  aside {
+    width: 70%;
+  }
+
+  /* about icons */
+
+  .section-about {
+    width: 80%;
+  }
+
+  .about-aside {
+    display: none;
+  }
+  .icons {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  /* reumse */
+  .section-resume {
+    width: fit-content;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 460px) {
+    nav {
+      margin: 0 0.5rem;
+    }
+
+    main {
+      margin: 0rem 1rem;
+    }
+
+    aside {
+      width: 80%;
+    }
+
+    /* about icons */
+
+    .section-about {
+      width: 80%;
+    }
+
+    .about-aside {
+      display: none;
+    }
+    .icons {
+      height: 3rem;
+      width: 3rem;
+    }
+
+    /* reumse */
+    .section-resume {
+      width: fit-content;
+    }
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* Styles for medium devices (tablets) go here */
 
-  p {
-    font-size: 1.2em;
-    line-height: 1.5em;
-  }
-
-  .p-intro-line-height {
-    font-size: 1.2em;
-  }
-
   nav {
     margin: 0 1.5rem;
   }
@@ -43,31 +150,3 @@
     width: 3rem;
   }
 }
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  p {
-    font-size: 1.3rem;
-  }
-  nav {
-    margin: 0 1.5rem;
-  }
-
-  main {
-    margin: 0rem 1.5rem;
-  }
-
-  .container-sections {
-    padding: 0 1rem;
-    margin: 1rem 0;
-  }
-
-  /* about icons */
-  .icons {
-    height: 3rem;
-    width: 3rem;
-  }
-}
-
-/* @media only screen and (min-width: 1200px) {
-  Styles for extra-large devices (large desktops) go here
-} */
