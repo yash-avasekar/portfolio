@@ -18,22 +18,22 @@ import { RiLinkedinFill } from "react-icons/ri";
 const Home = () => {
   return (
     <>
-      <div className="container-sections ">
+      <div className="container-sections section-animated">
         <Intro />
         <HiAside />
       </div>
 
-      <div className="container-sections">
+      <div className="container-sections  section-animated">
         <Aboutme />
         <AboutAside />
       </div>
 
-      <div className="container-sections">
+      <div className="container-sections section-animated">
         <Skills />
         <SkillsAside />
       </div>
 
-      <div className="container-sections">
+      <div className="container-sections section-animated">
         <Connect />
       </div>
     </>
