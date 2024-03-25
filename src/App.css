@@ -337,3 +337,7 @@ footer > p {
   font-size: 1rem;
   color: inherit;
 }
+
+.footer-links {
+  margin: 0 6px;
+}
