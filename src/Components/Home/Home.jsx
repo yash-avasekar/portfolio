@@ -11,7 +11,6 @@ import {
   skill_title,
 } from "./data";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { RiLinkedinFill } from "react-icons/ri";

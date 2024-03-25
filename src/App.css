@@ -16,6 +16,13 @@
   margin: 0 auto;
 }
 
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 li {
   list-style-type: none;
 }
