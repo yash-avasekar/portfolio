@@ -41,7 +41,9 @@ const Cards = () => {
 
   return (
     <section className="section-full-width">
-      <h1>My Recent Work</h1>
+      <h1>
+        My Recent <span className="fancy-color">Work</span>
+      </h1>
       <div className="container-cards  ">
         {cardTitle.map((title, index) => (
           <div className="card" key={index}>
