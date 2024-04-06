@@ -38,6 +38,7 @@ const Cards = () => {
   ]);
 
   const [live, setLive] = useState([["#"], ["#"], ["#"], ["#"]]);
+  const [link ,setLink] = useState([["https://github.com/yash-avasekar/portfolio"] ,["https://github.com/yash-avasekar/DRF-BLOG-APP"] ,["https://github.com/yash-avasekar/Django-Rest-Todo-APP"] ,["https://github.com/yash-avasekar/DRF-Instagram-App" ]])
 
   return (
     <section className="section-full-width">
@@ -66,9 +67,11 @@ const Cards = () => {
               ))}
             </div>
             <div className="card-button">
-              <Link to="https://github.com/yash-avasekar/" target="_blank">
-                GitHub
-              </Link>
+              {link[index].map((link) => (
+                <Link to={link} key={link}>
+                  Github
+                </Link>
+              ))}
               {live[index].map((link) => (
                 <Link to={link} key={link}>
                   Live
